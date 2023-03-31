@@ -29,6 +29,8 @@ class _OrderItemState extends State<OrderItem> {
           Image(
             image: AssetImage(widget.imageURI),
             fit: BoxFit.cover,
+            width: 80,
+            height: 80,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
