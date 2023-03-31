@@ -35,7 +35,11 @@ class DrinkMenu extends StatelessWidget {
               childCount: items.length,
             ),
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2),
+              crossAxisCount: 2,
+              crossAxisSpacing: 8.0,
+              mainAxisSpacing: 8.0,
+              childAspectRatio: 158 / 194,
+            ),
           )
         ],
       ),
