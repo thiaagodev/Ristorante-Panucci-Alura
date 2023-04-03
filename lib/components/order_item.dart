@@ -32,14 +32,16 @@ class _OrderItemState extends State<OrderItem> {
             width: 80,
             height: 80,
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text(widget.itemTitle),
-                Text(widget.itemPrice),
-              ],
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(widget.itemTitle),
+                  Text(widget.itemPrice),
+                ],
+              ),
             ),
           ),
           const Padding(
